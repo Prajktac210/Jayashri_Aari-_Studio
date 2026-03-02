@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f1e7;
+}
+
+/* ================= HEADER ================= */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 70px;
+    background-color: #ffffff;
+}
+
+/* LOGO */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #6b5b3e;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* BOOK NOW */
+.shop-btn {
+    text-decoration: none;
+    border: 1px solid #6b5b3e;
+    padding: 8px 22px;
+    color: #6b5b3e;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+    height: calc(100vh - 90px);
+    background-image: url("images/hero.png");
+    background-size: cover;
+    background-position: center right;
+}
+
+/* OVERLAY */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 520px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 26px;
+}
+
+/* BUTTON */
+.explore-btn {
+    background-color: #b89b5e;
+    border: none;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
