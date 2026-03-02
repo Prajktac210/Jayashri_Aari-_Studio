@@ -106,3 +106,64 @@ body {
     font-size: 13px;
     cursor: pointer;
 }
+
+/* SERVICES SECTION */
+.services {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.services h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #6b5b3e;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #7d6c4f;
+    margin-bottom: 50px;
+}
+
+/* FLEX CONTAINER (ONE LINE) */
+.services-container {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* ⭐ all services in one line */
+}
+
+/* SERVICE CARD */
+.service-card {
+    background-color: #fff;
+    width: 25%;
+    border: 1px solid #e0d6c2;
+    padding: 18px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #6b5b3e;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 13px;
+    color: #6f6f6f;
+    line-height: 1.6;
+}
