@@ -131,7 +131,7 @@ body {
     display: flex;
     gap: 25px;
     justify-content: space-between;
-    flex-wrap: nowrap; /* ⭐ all services in one line */
+    flex-wrap: nowrap; 
 }
 
 /* SERVICE CARD */
@@ -166,4 +166,228 @@ body {
     font-size: 13px;
     color: #6f6f6f;
     line-height: 1.6;
+}
+/* client review */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f1e7;
+}
+
+/* SECTION */
+.reviews-section {
+  padding: 70px 60px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #5c4a2f;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #7a6a4f;
+  margin-bottom: 50px;
+}
+
+/* FLEX CONTAINER – ONE LINE */
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* CARD */
+.review-card {
+  background: #fdfaf4;
+  border: 1px solid #d9c9a3;
+  padding: 25px 20px;
+  width: 23%;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* IMAGE – SHARP & CLEAR */
+.review-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 12px;
+
+  border: 2px solid #c8a44d;
+  padding: 3px;
+  background: #fff;
+
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* STARS */
+.stars {
+  color: #c8a44d;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* REVIEW TEXT */
+.review-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+/* NAME */
+.review-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #5c4a2f;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background-color: #6b5b3e;
+}
+
+
+
+@media (max-width: 992px) {
+
+  .header {
+    padding: 14px 40px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .hero-content {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .services {
+    padding: 60px 40px;
+  }
+
+  .service-card {
+    width: 48%;
+  }
+
+  .reviews-section {
+    padding: 60px 40px;
+  }
+
+  .review-card {
+    width: 48%;
+  }
+}@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    padding: 14px 20px;
+    position: relative;
+  }
+  /* LOGO CENTER */
+  .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* SHOW TOGGLE */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* HIDE NAV INITIALLY */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 0;
+    display: none;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .shop-btn {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 50px 20px;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  /* REVIEWS */
+  .reviews-section {
+    padding: 50px 20px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+  }
+
+  .review-card {
+    width: 100%;
+  }
 }
