@@ -391,3 +391,220 @@ body {
     width: 100%;
   }
 }
+
+
+/* contact */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f1e7;
+}
+
+/* HEADER */
+.header {
+  padding: 18px 70px;
+  background: #fff;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+}
+
+.logo span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f1e7;
+  color: #333;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact-section {
+  padding: 80px 60px;
+  animation: fadeUp 1s ease;
+}
+.contact-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #6b5b3e;
+  margin-bottom: 10px;
+  text-align: center;   
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= LEFT CONTENT ================= */
+.contact-info {
+  max-width: 480px;
+}
+
+.contact-info h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #6b5b3e;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* CONTACT DETAILS */
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-item {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #6b5b3e;
+}
+
+/* LINKS */
+.contact-item a {
+  text-decoration: none;
+  color: #6b5b3e;
+  border-bottom: 1px dashed #c8a44d;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #b89b5e;
+}
+
+/* INSTAGRAM */
+.contact-item.instagram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item.instagram i {
+  font-size: 18px;
+  color: #c13584;
+}
+
+/* ================= FORM ================= */
+.contact-form {
+  background-color: #ffffff;
+  padding: 35px;
+  width: 420px;
+  border: 1px solid #e0d6c2;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* BUTTON */
+.btn-whatsapp {
+  width: 100%;
+  background-color: #25d366;
+  border: none;
+  color: #ffffff;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 60px 40px;
+  }
+
+  .contact-wrapper {
+    gap: 40px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .contact-item.instagram {
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
