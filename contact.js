@@ -10,14 +10,14 @@ form.addEventListener("submit", function (e) {
   const message = form.querySelector("textarea").value;
 
   const whatsappMessage =
-    `Hello Aariyansh Aari Work 👋\n\n` +
+    `Hello Jayashri Aari Work 👋\n\n` +
     `Name: ${name}\n` +
     `Email: ${email}\n` +
     `Mobile: ${phone}\n` +
     `Design: ${design}\n` +
     `Message: ${message}`;
 
-  const whatsappNumber = "919175604825";
+  const whatsappNumber = "917620535309";
 
   const whatsappURL =
     `https://wa.me/${whatsappNumber}?text=` +
